@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="24dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <EditText
+            android:id="@+id/d_acc_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_text_background"
+            android:hint="Email"
+            android:padding="16dp"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="16dp"
+            android:textColorHint="@color/darkPurple" />
+
+        <EditText
+            android:id="@+id/d_acc_password"
+            android:layout_below="@id/d_acc_email"
+            android:layout_width="match_parent"
+            android:layout_marginTop="16dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_text_background"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="16dp"
+            android:textColorHint="@color/darkPurple" />
+
+        <EditText
+            android:layout_below="@id/d_acc_password"
+            android:id="@+id/d_acc_reason"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/ic_text_background"
+            android:hint="Reason"
+            android:inputType="textMultiLine|textLongMessage"
+            android:padding="16dp"
+            android:textColorHint="@color/darkPurple" />
+
+        <Button
+            android:id="@+id/d_acc_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="Deactivate Account"
+            android:layout_below="@+id/d_acc_reason"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/ic_button_background"
+            android:textColor="@color/quantum_white_text"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

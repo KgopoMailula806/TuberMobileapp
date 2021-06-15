@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="24dp"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_tuber_word_"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Thank you for rating the session."
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/btn_hamba_khaya"
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="go home"
+            android:background="@drawable/ic_button_background"
+            android:textColor="@color/quantum_white_text"
+            android:textAllCaps="false"
+            android:layout_gravity="center_horizontal"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="24dp"
+    android:layout_marginRight="24dp">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_above="@id/qrDisplay"
+        android:text="@string/scan_this_qr_code"
+        android:textAlignment="center"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/btn_generateQR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="116dp"
+        android:background="@drawable/ic_button_background"
+        android:text="Cancel"
+        android:textAllCaps="false"
+        android:textColor="@color/textColor"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/qrDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="365dp"
+        android:layout_above="@+id/btn_generateQR"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="20dp"
+        android:contentDescription="@string/qr_code_generated"
+        app:srcCompat="@drawable/qricon"
+        tools:visibility="visible" />
+
+
+</RelativeLayout>

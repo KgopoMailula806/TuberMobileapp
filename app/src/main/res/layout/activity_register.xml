@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RegistrationActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp">
+
+        <ImageView
+            android:id="@+id/imgIcon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:maxWidth="20dp"
+            android:maxHeight="20dp"
+            android:src="@drawable/ic_tuber_word_" />
+
+        <EditText
+            android:id="@+id/txtFullNames"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="52dp"
+            android:background="@drawable/ic_text_background"
+            android:hint="Full Name(s)"
+            android:inputType="text"
+            android:padding="16dp"
+            android:textColorHint="@color/darkPurple"
+            app:layout_constraintTop_toBottomOf="@+id/imgIcon" />
+
+        <EditText
+            android:id="@+id/txtSurname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/ic_text_background"
+            android:hint="Surname"
+            android:inputType="text"
+            android:padding="16dp"
+            android:textColorHint="@color/darkPurple"
+            app:layout_constraintTop_toBottomOf="@+id/txtFullNames" />
+
+        <Spinner
+            android:id="@+id/genderSpinner"
+            style="@style/spinnerStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:entries="@array/gender_array"
+            android:padding="16dp"
+            android:singleLine="true" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textColorHint="@color/darkPurple"
+            app:hintEnabled="false"
+            app:layout_constraintHorizontal_bias="2.0"
+            app:layout_constraintTop_toBottomOf="@+id/genderSpinner">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/ic_text_background"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:padding="16dp"
+                android:textColorHint="@color/darkPurple" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/numbers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textColorHint="@color/darkPurple"
+            app:counterMaxLength="10"
+            app:hintEnabled="false"
+            app:layout_constraintHorizontal_bias="2.0"
+            app:layout_constraintTop_toBottomOf="@+id/txtEmail">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/ic_text_background"
+                android:hint="Contact numbers"
+                android:inputType="number"
+                android:padding="16dp"
+                android:textColorHint="@color/darkPurple" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <EditText
+            android:id="@+id/age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/ic_text_background"
+            android:hint="age"
+            android:inputType="number"
+            android:padding="16dp"
+            android:textColorHint="@color/darkPurple"
+            app:layout_constraintTop_toBottomOf="@+id/txtEmail" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/txtRegisterPasswordBox">
+
+            <TextView
+                android:id="@+id/txtPath"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/ic_text_background"
+                android:hint="Please Choose Your Profile Image"
+                android:inputType="none"
+                android:onClick="chooseImage"
+                android:padding="16dp"
+                android:textColorHint="@color/darkPurple" />
+
+            <Button
+                android:id="@+id/btnChoosePicture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_button_background"
+                android:onClick="chooseImage"
+                android:padding="16dp"
+                android:text=" "
+                android:textAllCaps="false"
+                android:textColor="@color/textColor"
+
+                />
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtRegisterPasswordBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textColorHint="@color/darkPurple"
+            app:hintEnabled="false"
+            app:layout_constraintHorizontal_bias="2.0"
+            app:layout_constraintTop_toBottomOf="@+id/txtYear"
+            app:passwordToggleDrawable="@drawable/eye_icon_selector"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/Orange">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_text_background"
+                android:fontFamily=""
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="16dp"
+                android:textColorHint="@color/darkPurple" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtRegisterConPasswordBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textColorHint="@color/darkPurple"
+            app:hintEnabled="false"
+            app:layout_constraintHorizontal_bias="2.0"
+            app:layout_constraintTop_toBottomOf="@+id/txtRegisterPasswordBox"
+            app:passwordToggleDrawable="@drawable/eye_icon_selector"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/Orange">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtConPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_text_background"
+                android:fontFamily=""
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+                android:padding="16dp"
+                android:textColorHint="@color/darkPurple" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/ic_button_background"
+            android:onClick="signUp"
+
+            android:text="Continue"
+            android:textAllCaps="false"
+            android:textColor="@color/textColor"
+            app:layout_constraintTop_toBottomOf="@+id/txtRegisterPasswordBox" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterRemainingDetails">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/institution"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/ic_text_background"
+                android:hint="Institution/School"
+                android:padding="16dp"
+                android:textColorHint="@color/darkPurple"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/txtYear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/ic_text_background"
+                android:hint="Year of Study"
+                android:padding="16dp"
+                android:textColorHint="@color/darkPurple"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/txtCV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/ic_text_background"
+                android:hint="Please Choose Your CV                         "
+                android:inputType="none"
+                android:onClick="ChooseCV"
+                android:padding="16dp"
+                android:textColorHint="@color/darkPurple"
+                android:visibility="gone"/>
+
+
+            <TextView
+                android:id="@+id/txtPC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/ic_text_background"
+                android:hint="Please Choose Your Police Clearance"
+                android:inputType="none"
+                android:onClick="ChoosePoliceClearance"
+                android:padding="16dp"
+                android:textColorHint="@color/darkPurple"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/txtAC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/ic_text_background"
+                android:hint="Please Choose Your Academic Record"
+                android:inputType="none"
+                android:onClick="ChooseAcademicRecord"
+                android:padding="16dp"
+                android:textColorHint="@color/darkPurple"
+                android:visibility="gone"/>
+
+
+            <Button
+                android:id="@+id/btnRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/ic_button_background"
+                android:onClick="signUp"
+                android:text="Sign Up"
+                android:textAllCaps="false"
+                android:textColor="@color/textColor" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

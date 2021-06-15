@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Tuber Mobile Application</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="title_activity_request_tutor">Map</string>
+
+    <string name="app_name_main">Tuber</string>
+
+    <string name="gender_prompt">Specify your gender</string>
+
+    <string-array name="module_array">
+        <item>Calculus</item>
+        <item>Statistics</item>
+        <item>Computer Science</item>
+        <item>Informatics</item>
+        <item>Signal Processing</item>
+    </string-array>
+
+    <string-array name="gender_array">
+        <item>--Specify your gender--</item>
+        <item>Female</item>
+        <item>Male</item>
+        <item>Other</item>
+    </string-array>
+
+    <string name="navigation_drawer_open">Open Navigation Drawer</string>
+    <string name="navigation_drawer_close">Close Navigation Drawer</string>
+
+    <string name="title_activity_booking_request_mapp">Map</string>
+    <string name="title_activity_booking_request_map">Map</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="action_settings">Settings</string>
+    <string name="generate_qr_code">Generate QR Code</string>
+    <string name="qr_code_scanner">QR Code scanner</string>
+    <string name="qr_code_generated">QR Code generated</string>
+    <string name="qr_code">QR Code</string>
+    <string name="scan_qr_code">Scan QR Code</string>
+    <string name="scan_this_qr_code">Scan Me</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

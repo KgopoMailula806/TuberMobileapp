@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ShowIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_dashboard"
+            android:icon="@drawable/ic_dashboard"
+            android:title="Home" />
+
+        <item
+            android:id="@+id/menu_request"
+            android:icon="@drawable/ic_request"
+            android:title="Request A Tutor" />
+
+        <item
+            android:id="@+id/menu_sessions"
+            android:icon="@drawable/ic_sessions"
+            android:title="View Sessions" />
+
+        <item
+            android:id="@+id/menu_modules"
+            android:icon="@drawable/ic_my_modules_list"
+            android:title="Modules" />
+
+        <item
+            android:id="@+id/menu_notifications"
+            android:icon="@drawable/ic_bell_black"
+            android:title="Notifications" />
+
+        <item
+            android:id="@+id/menu_payments"
+            android:icon="@drawable/ic_payments"
+            android:title="Payments" />
+
+        <item
+            android:id="@+id/menu_profile"
+            android:icon="@drawable/ic_profile"
+            android:title="Profile" />
+        <item
+            android:id="@+id/menu_QR"
+            android:icon="@drawable/clipart2022339"
+            android:title="QR Code Generator"
+            android:visible="false"/>
+
+        <item
+            android:id="@+id/menu_QRScan"
+            android:icon="@drawable/clipart2022339"
+            android:title="QR Scanner"
+            android:visible="false" />
+
+    </group>
+
+    <item android:title="Actions">
+        <menu>
+
+            <item
+                android:id="@+id/menu_switch"
+                android:icon="@drawable/ic_switch_account"
+                android:title="Switch Account"
+                android:visible="false"/>
+            <item
+                android:id="@+id/menu_become_tutor"
+                android:icon="@drawable/ic_become_tutor"
+                android:title="Become A Tutor" />
+
+            <item
+                android:id="@+id/menu_signout"
+                android:icon="@drawable/ic_signout"
+                android:title="Sign Out" />
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="24dp"
+    tools:context=".WaitingAreaActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_tuber_word_" />
+
+        <TextView
+            android:id="@+id/first"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Thank you for your time, we have received your application"
+            android:textColor="@color/darkPurple"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/second"
+            android:layout_width="272dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/first"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="21dp"
+            android:text="Our recruitment team, will look at your application and the verdict will be sent to via email"
+            android:textColor="@color/darkPurple"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/third"
+            android:layout_width="272dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/second"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="21dp"
+            android:text="You will only be able to login when you officially a tutor.\n\nGood Luck, \n- with love from Tuber"
+            android:textColor="@color/darkPurple"
+            android:textSize="20dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/third"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="16dp"
+            android:background="@drawable/ic_button_background"
+            android:padding="5dp"
+            android:text="home"
+            android:onClick="close"
+            android:textAllCaps="false"
+            android:textColor="@color/quantum_white_text" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

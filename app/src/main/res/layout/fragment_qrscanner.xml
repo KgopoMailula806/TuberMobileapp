@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@android:color/background_light">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="42dp"
+        android:text="@string/scan_this_qr_code"
+        android:textAlignment="center"
+        android:textSize="36sp" />
+
+    <Button
+        android:id="@+id/btn_generateQR"
+        android:layout_width="202dp"
+        android:layout_height="76dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="102dp"
+        android:layout_marginEnd="106dp"
+        android:layout_marginBottom="116dp"
+        android:background="@drawable/ic_button_background"
+        android:text="@string/generate_qr_code"
+        android:textColor="@color/textColor"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/qrDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="365dp"
+        android:layout_above="@+id/btn_generateQR"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="111dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginBottom="65dp"
+        android:contentDescription="@string/qr_code_generated"
+        app:srcCompat="@drawable/qricon"
+        tools:visibility="visible" />
+
+
+</RelativeLayout>

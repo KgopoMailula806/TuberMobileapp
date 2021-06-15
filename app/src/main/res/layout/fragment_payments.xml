@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/invoice_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/darkPurple"
+        android:padding="10dp"
+        android:paddingBottom="16dp">
+
+        <TextView
+            android:id="@+id/pay_tittle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Invoices"
+            android:textColor="@android:color/white"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/pay_amount_due"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pay_tittle"
+            android:text="Amount Due: R "
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <ProgressBar
+            android:id="@+id/pay_amount_loader"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/pay_tittle"
+            android:layout_toEndOf="@id/pay_amount_due" />
+
+        <TextView
+            android:id="@+id/pay_tot_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pay_tittle"
+            android:layout_toEndOf="@id/pay_amount_due"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/invoice_header"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/no_invoice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_marginEnd="24dp"
+            android:padding="10dp"
+            android:layout_marginStart="24dp"
+            android:visibility="gone"
+            android:text="you currently don't have any invoices due"
+            android:textSize="20sp"/>
+
+        <ProgressBar
+            android:id="@+id/pay_information_loader"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal|center_vertical" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/invoice_recycler_view"
+            android:scrollbars="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_pay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="24dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/ic_button_background"
+        android:padding="5dp"
+        android:text="Pay Now"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>

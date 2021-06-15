@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/bt_menu_my_modules"
+        android:icon="@drawable/ic_my_modules_list"
+        android:title="My Modules" />
+    <item
+        android:id="@+id/bt_menu_offered_modules"
+        android:icon="@drawable/ic_modules"
+        android:title="Modules Offered" />
+
+</menu>
